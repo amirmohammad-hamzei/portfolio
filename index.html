@@ -1,68 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of Amir" />
-  <title>Amir | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Amir Hamzei | Portfolio</title>
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>👋 Hi, I’m Amir</h1>
-      <p>Web Developer | Designer | Open Source Lover</p>
-      <button id="theme-toggle">🌙 Dark Mode</button>
-    </div>
-  </header>
+<header>
+  <div class="container">
+    <h1>Amir Hamzei</h1>
+    <button id="theme-toggle" aria-label="Toggle Dark/Light Theme">🌙</button>
+  </div>
+</header>
 
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-  <main>
-    <section id="about" class="fade-in">
-      <h2>About Me</h2>
-      <p>
-        I’m Amir, a passionate web developer with a love for creating beautiful and functional websites. Let’s build something amazing together!
-      </p>
-    </section>
+<main>
+  <section id="about" class="section fade-in">
+    <h2>About Me</h2>
+    <p id="bio">Loading bio...</p>
+  </section>
 
-    <section id="projects" class="fade-in">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <h3>Project One</h3>
-          <p>A modern portfolio site with animations and dark/light theme.</p>
-          <a href="#">View Project</a>
-        </div>
-        <div class="project-card">
-          <h3>Project Two</h3>
-          <p>Responsive landing page with smooth scroll and hover effects.</p>
-          <a href="#">View Project</a>
-        </div>
-      </div>
-    </section>
+  <section id="projects" class="section fade-in">
+    <h2>Projects</h2>
+    <div id="projects-list" class="projects-grid">Loading projects...</div>
+  </section>
 
-    <section id="contact" class="fade-in">
-      <h2>Contact</h2>
-      <p>Email me at: <a href="mailto:amir@example.com">amir@example.com</a></p>
-      <div class="social-links">
-        <a href="https://github.com/amirmohammad-hamzei" target="_blank">GitHub</a>
-        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-        <a href="https://twitter.com" target="_blank">Twitter</a>
-      </div>
-    </section>
-  </main>
+  <section id="contact" class="section fade-in">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required />
 
-  <footer>
-    <p>&copy; 2025 Amir. All Rights Reserved.</p>
-  </footer>
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
 
-  <script src="script.js"></script>
+      <label for="message">Message:</label>
+      <textarea id="message" rows="4" required></textarea>
+
+      <button type="submit">Send</button>
+      <p id="form-status"></p>
+    </form>
+    <p>Or email me at: <a href="mailto:amir@example.com">amir@example.com</a></p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Amir Hamzei</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
